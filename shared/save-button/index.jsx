@@ -4,7 +4,7 @@ import { Button } from '@mui/material'
 function SaveButton() {
     return (
         <div>
-            <Button variant="contained">hello</Button>
+            <Button variant="contained" sx={{padding: '10px 22px'}}>Save</Button>
         </div>
     )
 }

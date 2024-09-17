@@ -4,7 +4,7 @@ import { Container } from '@mui/material'
 
 function App() {
     return (
-        <Container className="App">
+        <Container className="App" sx={{maxWidth:'1280px'}}>
             <UserEmailForm />
         </Container>
     )
