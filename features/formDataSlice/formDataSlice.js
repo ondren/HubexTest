@@ -3,7 +3,7 @@ import { currentDate } from '../../shared/consts/consts.js'
 
 const initialState = {
     FIRST_NAME: '',
-    LAST_NAME: '',
+    EMAIL: '',
     BIO: '',
     COUNTRY: '',
     CITY: '',
@@ -15,11 +15,11 @@ const formDataSlice = createSlice({
     name: 'formData',
     initialState,
     reducers: {
-        setFirstName: (state, action) => {
+        setName: (state, action) => {
             state.FIRST_NAME = action.payload
         },
-        setLastName: (state, action) => {
-            state.LAST_NAME = action.payload
+        setEmail: (state, action) => {
+            state.EMAIL = action.payload
         },
         setBio: (state, action) => {
             state.BIO = action.payload
@@ -34,11 +34,11 @@ const formDataSlice = createSlice({
             state.ADDRESS = action.payload
         },
         setDate: (state) => {
-            state.DATE = `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()}/${currentDate.getHours()}/${currentDate.getMinutes()}`
+            state.DATE = `${currentDate.getDate()}/${currentDate.getMonth()}/${currentDate.getFullYear()}/${currentDate.getHours()}:${currentDate.getMinutes()}`
         },
     },
 })
 
-
-export const {setFirstName, setLastName, setBio,setCountry, setCity, setAddress, setDate} = formDataSlice.actions
+export const { setName, setEmail, setBio, setCountry, setCity, setAddress, setDate } =
+    formDataSlice.actions
 export default formDataSlice.reducer
