@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Box, Divider, Grid2, Paper, TextField, Typography } from '@mui/material'
 import { formText } from './consts/formText.js'
-import SaveButton from '../../shared/save-button/index.jsx'
+import SaveButton from '../../shared/save-button/index.tsx'
 import { useDispatch, useSelector } from 'react-redux'
 import {
     setAddress,

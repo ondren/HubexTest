@@ -1,7 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 import { Button } from '@mui/material'
 
-function SaveButton({ propFunction }) {
+const SaveButton = ({ propFunction }: { propFunction?: any }) => {
     return (
         <div>
             <Button
